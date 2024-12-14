@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoreBit</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="promociones">
+            <p>Promociones - Descuentos - Ofertas</p>
+        </div>
+        <div class="barra-navegacion">
+            <a href="#" class="logo"><img src="../img/logo.jpg" alt="logo"></a>
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="./hombre.html">Hombre</a>
+                <a href="./mujer.html">Mujer</a>
+                <a href="./mayorista.html">Mayorista</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+            <div class="carrito">
+                <a href="#"><img src="../img/carrito.svg" alt=""></a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <section class="contenido-principal">
+            <H1>Contacto</H1>
+            <form action="#" method="post">
+                <label for="nombre">Nombre y Apellido: </label>
+                <input required type="text" name="nombre" id="nombre"><br>
+
+                <label for="genero">Genero: </label><br>
+                <input type="radio" name="masculino" id="masculino">
+                <label for="hombre">Masculino</label>
+                <input type="radio" name="femenino" id="femenino">
+                <label for="Mujer">Femenino</label><br>
+                <input type="radio" name="otro" id="otro">
+                <label for="otro">Prefiero no responder</label><br>
+
+                <label for="provincia">Provincia: </label>
+                <select required name="provincia" id="provincia">
+                    <option value="Salta">Salta</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="Tucuman">Tucuman</option>
+                    <option value="La Rioja">LA Rioja</option>
+                    <option value="BS AS"> Buenos Aires</option>
+                    <option value="Otra">Otra</option>
+                </select><br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required><br>
+
+                <label for="telefono">Telefono fijo: </label>
+                <input type="tel" name="telefono" id="telefono" required><br>
+
+                <label for="celular">Telefono celular: </label>
+                <input type="tel" name="celular" id="celular" required><br>
+
+                <label for="mensaje">Mensaje o consulta: </label><br>
+                <textarea name="mensaje" id="mensaje" required></textarea><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <div class="info">
+            <p>TEL:123456789</p>
+            <p>DIRECCION</p>
+        </div>
+        <div class="redes1">
+            <a href="">Whatsapp</a>
+            <a href="">Facebook</a>
+        </div>
+        <div class="redes2">
+            <a href="">Instagram</a>
+            <a href="">TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>
