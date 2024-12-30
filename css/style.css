@@ -1,16 +1,148 @@
-.anuncios{
-    display: flex;
-    background-color: black;
-    width: 100vw;
-    height: auto;
-    justify-content:space-around;
-}
-.anuncio-item{
-    background-color: aqua;
-    color: white;
-    padding: 1px 20px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ubuntu", "Sour Gummy", serif;
 }
 
-main{
-    height: 70vw;
+body {
+  background-color: #508991;
 }
+
+article {
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.anuncios {
+  display: flex;
+  background-color: #172a3a;
+  width: 100vw;
+  height: auto;
+  justify-content: space-around;
+}
+
+.anuncio-item {
+  color: #74b3ce;
+  padding: 1px 20px;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.my-bg-navbar {
+  background-color: #004346;
+}
+
+.cel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.cel-item img {
+  width: 130px;
+  background-color: #ffffff;
+}
+
+.note {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.note-item img {
+  width: 130px;
+  background-color: #ffffff;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #74b3ce;
+  justify-content: space-around;
+}
+footer .foot1 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+footer .foot1 a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+footer .foot2 {
+  text-align: center;
+}
+footer .foot2 h5 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+footer .foot2 .redes {
+  display: flex;
+  gap: 50px;
+}
+footer .foot2 .redes a {
+  font-size: 20px;
+}
+footer .foot3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+footer .foot3 .p-footer {
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+}
+
+.redes a:hover {
+  color: #172a3a;
+}
+
+.btm-wpp {
+  background-color: greenyellow;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.438);
+}
+
+.btm-wpp a {
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,155 @@
+@import 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente;
+}
+
+body{
+    background-color: $third-color;
+}
+
+article{
+    text-align: center;
+}
+
+h1{
+    color: $white-color;
+    margin: 0 10px;
+}
+
+h2{
+    text-align: center;
+    color: $white-color;
+}
+
+h3{
+    color: $white-color;
+}
+
+p{
+    color: $white-color;
+}
+
+a{
+    text-decoration: none;
+}
+
+.anuncios{
+    display: flex;
+    background-color: $first-color;
+    width: 100vw;
+    height: auto;
+    justify-content:space-around;
+    
+}
+
+.anuncio-item{
+    color: $fifth-color;
+    padding: 1px 20px;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes aparecer {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.my-bg-navbar{
+    background-color: $second-color;
+}
+
+.cel{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.cel-item img{
+    width: 130px;
+    background-color: $white-color;
+}
+
+.note{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.note-item img{
+    width: 130px;
+    background-color: $white-color;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $fifth-color;
+    justify-content: space-around;
+    .foot1{
+        margin-top: 5px;
+        margin-bottom: 15px;
+        text-align: center;
+        a{
+            display: block;
+            text-decoration: none;
+            color: $black-color;
+        }
+    }
+    .foot2{
+        text-align: center;
+        h5{
+            color: $white-color;
+            margin-bottom: 20px;
+        }
+        .redes{
+            display: flex;
+            gap: 50px;
+            a{
+                font-size: 20px;
+            }
+        }
+    }
+    .foot3{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        .p-footer{
+            text-align: center;
+            margin: $margin-all5;
+        }
+    }
+}
+
+.redes a:hover{
+    color: $first-color;
+}
+
+.btm-wpp{
+    background-color: greenyellow;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.438);
+}
+.btm-wpp a{
+    font-size: 25px;
+}
+
+@media screen and (min-width: 480px){
+}
+
+@media screen and (min-width: 768px){
+}
+
+@media screen and (min-width: 1024px){
+}
