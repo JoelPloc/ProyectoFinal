@@ -61,7 +61,38 @@
       </nav>
     </header>
     <main>
-        
+      <h2>Contacto</h2>
+      <form class="form-contacto" action="#" method="post">
+          <div class="form-izq">
+            <label for="nombre">Nombre y Apellido: </label>
+            <input required type="text" name="nombre" id="nombre"><br>
+
+            <label for="provincia">Provincia: </label>
+            <select required name="provincia" id="provincia">
+              <option value="Salta">Salta</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="Tucuman">Tucuman</option>
+              <option value="La Rioja">LA Rioja</option>
+              <option value="BS AS"> Buenos Aires</option>
+              <option value="Otra">Otra</option>
+            </select><br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="telefono">Telefono fijo: </label>
+            <input type="tel" name="telefono" id="telefono" required><br>
+
+            <label for="celular">Telefono celular: </label>
+            <input type="tel" name="celular" id="celular" required><br>
+          </div>
+
+          <div class="form-der">
+            <label for="mensaje">Mensaje o consulta: </label><br>
+            <textarea name="mensaje" id="mensaje" required></textarea><br>
+            <input type="submit" value="Enviar">
+          </div>
+      </form>
     </main>
     <footer>
       <div class="foot1">
